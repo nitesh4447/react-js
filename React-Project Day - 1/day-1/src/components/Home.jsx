@@ -1,23 +1,17 @@
-import "../components/Home.css"
-import { FaInstagram } from "react-icons/fa"
-import { FaCompactDisc } from "react-icons/fa6";
-import { FaRegUserCircle } from "react-icons/fa";
-export default function Home()
- {
-  return (
-    <div>
-     <header>
-      <ul>
-      <h1><FaInstagram/></h1>
-      <a href=""><li>Home</li></a>
-        <a href=""><li>Blog</li></a>
-        <a href=""><li>Service</li></a>
-        <a href=""><li>Contact</li></a>
-        <a href=""><li><FaCompactDisc /></li></a>
-        <input placeholder="Email"></input>
-        <button><FaRegUserCircle/>LOGIN</button>
-      </ul>
-     </header>
-    </div>
-  )
+function Home(){
+    return(
+        <div>
+
+        <span className="header"><marquee behavior="scroll" direction="right"><h2>HEADER PAGE</h2></marquee></span>
+            <ul className="nav">
+                <li><a href=""> <img className="headimg" src="https://img.freepik.com/premium-vector/globe-planet-icon-sign-internet-global-sphere_250841-867.jpg"></img></a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Service</a></li>
+                <li><button>Login</button></li>
+            </ul>
+        </div>
+    )
 }
+
+export default Home
