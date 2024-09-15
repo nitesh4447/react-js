@@ -1,11 +1,15 @@
 import "./App.css";
-import "./components/Home.css"
+import Content from "./components/Content";
+import Footer from "./components/Footer";
 import Home from "./components/Home";
 
 function App() {
   return (
     <div className="App">
-      <Home />
+    <Home />
+    <Content />
+    <Footer />
+
     </div>
   );
 }
